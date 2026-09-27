@@ -1,8 +1,13 @@
 //Function With Parameter and Without Return Type
-void add(int a, int b) {
-  print(a + b);
+
+void calculateDiscount(double price, double discount) {
+  double finalPrice = price - (price * discount / 100);
+
+  print('Original Price: ₹$price');
+  print('Discount: $discount%');
+  print('Final Price: ₹$finalPrice');
 }
 
 void main() {
-  add(10, 20);
+  calculateDiscount(1000, 10);
 }

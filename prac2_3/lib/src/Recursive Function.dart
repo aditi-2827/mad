@@ -1,10 +1,16 @@
-int factorial(int n) {
-  if (n == 1) {
-    return 1;
+int sumOfDigits(int number) {
+  if (number < 10) {
+    return number;
   }
-  return n * factorial(n - 1);
+
+  return (number % 10) + sumOfDigits(number ~/ 10);
 }
 
 void main() {
-  print(factorial(5));
+  int number = 58321;
+
+  int result = sumOfDigits(number);
+
+  print('Number: $number');
+  print('Sum of digits: $result');
 }

@@ -1,8 +1,10 @@
 //4. Function Without Parameter and With Return Type
-int getNumber() {
-  return 10;
+String getUserName() {
+  return 'Aditi';
 }
 
 void main() {
-  print(getNumber());
+  String name = getUserName();
+
+  print('User Name: $name');
 }

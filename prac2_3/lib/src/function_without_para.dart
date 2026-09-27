@@ -1,8 +1,8 @@
 //Function Without Parameter and Without Return Type
-void greet() {
-  print("Hello");
+void displayWelcomeMessage() {
+  print('Welcome to the Application!');
 }
 
 void main() {
-  greet();
+  displayWelcomeMessage();
 }
